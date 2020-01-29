@@ -1,0 +1,10 @@
+pipeline:
+  prod-test:
+    when:
+      branch: master
+      event: push
+    image: docker.enterprise.com/infra/base-centos7:latest
+    pull: true
+    commands:
+      - cat OpenFile.txt
+#      - curl -i --insecure https://drone.enterprise.com/api/repos/YourOrg/YourRepo/builds -H "Authorization: Bearer __token__"
