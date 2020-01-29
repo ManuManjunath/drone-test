@@ -7,4 +7,4 @@ pipeline:
     pull: true
     commands:
       - cat OpenFile.txt
-#      - curl -i --insecure https://drone.enterprise.com/api/repos/YourOrg/YourRepo/builds -H "Authorization: Bearer __token__"
+#      - curl -i --insecure https://drone.enterprise.com/api/repos/YourOrg/YourRepo/builds/{buildID} -H "Authorization: Bearer __token__"
